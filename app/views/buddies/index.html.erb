@@ -1,0 +1,7 @@
+<h1 class='text-center'>Duos of the Day</h1>
+<% @buddies.each do |buddy| %>
+  <div class="avatar">
+    <%= image_tag(buddy.url) %>
+  </div>
+  <h2><%=" #{buddy.name}, #{buddy.age}"%></h2>
+<% end %>

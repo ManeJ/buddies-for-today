@@ -1,0 +1,13 @@
+<div class="container">
+
+  <%= cl_image_tag @buddy.url, crop: :fill %>
+  <h2><strong><%= @buddy.name %></strong></h2>
+  <p><span>Age:</span> <%= @buddy.age %></p>
+  <p><span>Email:</span> <%= @buddy.email %></p>
+  <p><span>From Batch:</span> <%= @buddy.batch %></p>
+
+  <div class="d-flex justify-content-center">
+    <%= link_to "Back to DUOS", buddies_path %>
+  </div>
+
+</div>
